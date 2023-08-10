@@ -4,7 +4,7 @@ import { HeaderContent, Link, ListaDeLinks } from "./styles"
 const Header = () => {
 
     return (
-            <HeaderContent className="container">
+            <HeaderContent>
                 <nav>
                     <ListaDeLinks>
                         <li>

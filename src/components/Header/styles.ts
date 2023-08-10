@@ -20,7 +20,6 @@ export const HeaderContent = styled.header`
     border: 2px solid ${colors.blueBrand};
     border-top: 0;
     border-radius: 16px;
-    margin-bottom: 180px;
 `
 
 export const ListaDeLinks = styled.ul`
@@ -37,7 +36,7 @@ export const Link = styled.a`
     border-radius: 16px;
     text-decoration: none;
     color: ${colors.black};
-    background-color: ${colors.white};
+    background-color: ${colors.background};
     background-position: left;
     &:hover {
         animation: ${fundoLink};

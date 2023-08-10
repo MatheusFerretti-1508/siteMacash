@@ -17,6 +17,14 @@ const waves = keyframes`
 `
 
 export const BrandName = styled.h1`
+    /* position: absolute;
+    top: 260px;
+    left: 32%;
+    right: 32%; */
+    display: flex;
+    justify-content: center;
+    margin-top: 240px;
+    margin-bottom: 240px;
     font-size: 80px;
     font-weight: 700;
     line-height: 32px;

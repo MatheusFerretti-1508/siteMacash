@@ -3,7 +3,8 @@ import {createGlobalStyle} from 'styled-components'
 export const colors = {
     blueBrand: '#1D78A4',
     white: '#fff',
-    black: '#000'
+    black: '#000',
+    background: '#ebebeb'
 }
 
 export const GlobalCss = createGlobalStyle`
@@ -17,5 +18,9 @@ export const GlobalCss = createGlobalStyle`
     .container {
         max-width: 1024px;
         margin: 0 auto;
+    }
+
+    body {
+        background-color: ${colors.background};
     }
 `

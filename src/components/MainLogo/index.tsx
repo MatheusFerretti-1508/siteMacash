@@ -4,7 +4,7 @@ import { BrandName } from "./styles"
 const MainLogo = () => {
 
     return(
-        <div className="container">
+        <div>
             <BrandName>MACASH</BrandName>
         </div>
     )
