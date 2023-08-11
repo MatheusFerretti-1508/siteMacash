@@ -4,11 +4,13 @@ import Slogan from "../../components/Slogan"
 import ImgFoguete from '../../assets/images/rocket-11-svgrepo-com.svg'
 import ImgLucro from '../../assets/images/profit-bar-chart-finance-svgrepo-com.svg'
 import Chamada from "../../components/Chamada"
+import Footer from "../../components/Footer"
 
 
 const Home = () => {
 
     return(
+        <>
         <div className="container">
             <Header />
             <MainLogo />
@@ -31,6 +33,8 @@ const Home = () => {
             />
             <Chamada />
         </div>
+            <Footer />
+        </>
     )
 }
 
