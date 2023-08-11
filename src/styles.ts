@@ -22,5 +22,10 @@ export const GlobalCss = createGlobalStyle`
 
     body {
         background-color: ${colors.background};
+
+        @media (max-width: 768px) {
+            width: 90%;
+            margin: 0 auto;
+        }
     }
 `

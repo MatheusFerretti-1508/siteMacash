@@ -37,12 +37,16 @@ export const Link = styled.a`
     text-decoration: none;
     color: ${colors.black};
     background-color: ${colors.background};
-    background-position: left;
+    
     &:hover {
         animation: ${fundoLink};
         animation-duration: 1s;
         animation-iteration-count: 1;
         background-color: ${colors.blueBrand};
         color: ${colors.white};
+    }
+
+    @media (max-width: 768px) {
+        font-size: 14px;
     }
     `

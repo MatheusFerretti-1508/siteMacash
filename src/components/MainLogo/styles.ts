@@ -16,6 +16,21 @@ const waves = keyframes`
     }
 `
 
+const MobileWaves = keyframes`
+    
+    0% {
+        font-size: 60px;
+    }
+
+    50% {
+        font-size: 90px;
+    }
+
+    100% {
+        font-size: 60px;
+    }
+`
+
 export const BrandName = styled.h1`
     /* position: absolute;
     top: 260px;
@@ -35,4 +50,9 @@ export const BrandName = styled.h1`
     animation: ${waves} infinite;
     animation-duration: 8s;
 
+    @media (max-width: 768px){
+        font-size: 40px;
+        animation: ${MobileWaves} infinite;
+        animation-duration: 8s;
+    }
 `

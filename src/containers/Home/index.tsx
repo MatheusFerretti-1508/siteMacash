@@ -3,6 +3,7 @@ import MainLogo from "../../components/MainLogo"
 import Slogan from "../../components/Slogan"
 import ImgFoguete from '../../assets/images/rocket-11-svgrepo-com.svg'
 import ImgLucro from '../../assets/images/profit-bar-chart-finance-svgrepo-com.svg'
+import Chamada from "../../components/Chamada"
 
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
                     do mercado e introduzimos sua marca às maiores plataformas de vendas online!" 
             imagem={ImgLucro} 
             />
+            <Chamada />
         </div>
     )
 }
