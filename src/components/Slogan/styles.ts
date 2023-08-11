@@ -12,7 +12,7 @@ export const Direcionamento = styled.div<Props>`
 
 export const HomeInfo = styled.div<Props>`
     margin-top: 80px;
-    padding: ${(props) => props.posicao === 'esquerda' ? '16px' : '24px 18px 18px 40px'};
+    padding: ${(props) => props.posicao === 'esquerda' ? '16px 20px' : '24px 18px 18px 40px'};
     width: 400px;
     height: 400px;
     border-radius: ${(props) => props.posicao === 'esquerda' ? '0% 50% 50% 0' : '50% 0 0 50%'} ;
@@ -42,7 +42,7 @@ export const HomeInfo = styled.div<Props>`
         text-align: ${(props) => props.posicao === 'esquerda' ? 'start' : 'end'};
 
         @media (max-width: 768px) {
-            margin-bottom: 0px;
+            margin-bottom: ${(props) => props.posicao === 'esquerda' ? '36px' : '10px'};
             line-height: 28px;
             }
     }
