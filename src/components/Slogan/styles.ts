@@ -12,7 +12,7 @@ export const Direcionamento = styled.div<Props>`
 
 export const HomeInfo = styled.div<Props>`
     margin-top: 80px;
-    padding: ${(props) => props.posicao === 'esquerda' ? '16px 20px' : '24px 18px 18px 40px'};
+    padding: ${(props) => props.posicao === 'esquerda' ? '16px 24px 16px 16px' : '24px 18px 18px 40px'};
     width: 400px;
     height: 400px;
     border-radius: ${(props) => props.posicao === 'esquerda' ? '0% 50% 50% 0' : '50% 0 0 50%'} ;
