@@ -23,7 +23,7 @@ export const TituloChamada = styled.h1`
     margin-bottom: 24px;
 
     @media (max-width: 768px) {
-        font-size: 48px;
+        font-size: 36px;
     }
 `
 

@@ -16,7 +16,7 @@ const fundoLink = keyframes`
 `
 
 export const HeaderContent = styled.header`
-    padding: 24px;
+    padding: 16px;
     border: 2px solid ${colors.blueBrand};
     border-top: 0;
     border-radius: 16px;
@@ -47,6 +47,6 @@ export const Link = styled.a`
     }
 
     @media (max-width: 768px) {
-        font-size: 14px;
+        font-size: 11px;
     }
     `

@@ -19,15 +19,15 @@ const waves = keyframes`
 const MobileWaves = keyframes`
     
     0% {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     50% {
-        font-size: 90px;
+        font-size: 80px;
     }
 
     100% {
-        font-size: 60px;
+        font-size: 50px;
     }
 `
 
