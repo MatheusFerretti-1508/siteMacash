@@ -29,3 +29,9 @@ export const GlobalCss = createGlobalStyle`
         background-color: ${colors.background};
     }
 `
+
+// #24b811
+// #1b870e
+// #288ebf
+// #126794
+// #DFE6F0

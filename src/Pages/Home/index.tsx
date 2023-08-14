@@ -1,10 +1,10 @@
-import Header from "../../components/Header"
+import Header from "../../containers/Header"
 import MainLogo from "../../components/MainLogo"
 import Slogan from "../../components/Slogan"
 import ImgFoguete from '../../assets/images/rocket-11-svgrepo-com.svg'
 import ImgLucro from '../../assets/images/profit-bar-chart-finance-svgrepo-com.svg'
 import Chamada from "../../components/Chamada"
-import Footer from "../../components/Footer"
+import Footer from "../../containers/Footer"
 
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
     return(
         <>
         <div className="container">
-            <Header />
+            <Header ativo="1" />
             <MainLogo />
             <Slogan 
             posicao="esquerda"

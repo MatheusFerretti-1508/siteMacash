@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { keyframes, styled } from "styled-components";
 import { colors } from "../../styles";
 
@@ -31,7 +32,7 @@ export const ListaDeLinks = styled.ul`
     }
     `
 
-export const Link = styled.a`
+export const LinkDeNavegacao = styled(Link)`
     padding: 8px;
     border-radius: 16px;
     text-decoration: none;
