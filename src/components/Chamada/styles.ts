@@ -12,6 +12,11 @@ export const ContainerChamada = styled.div`
         height: 100px;
         margin-bottom: 24px;
     }
+
+    a {
+        text-decoration: none;
+        color: ${colors.black};
+    }
 `
 
 export const TituloChamada = styled.h1`
@@ -23,7 +28,7 @@ export const TituloChamada = styled.h1`
     margin-bottom: 24px;
 
     @media (max-width: 768px) {
-        font-size: 36px;
+        font-size: 32px;
     }
 `
 

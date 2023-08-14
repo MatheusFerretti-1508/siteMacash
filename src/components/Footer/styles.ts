@@ -9,6 +9,10 @@ export const FooterContent = styled.div`
     padding: 32px;
     display: flex;
     margin: 0 auto;
+
+    @media (max-width:768px) {
+        height: auto;
+    }
 `
 
 export const Abas = styled.div`
@@ -18,6 +22,10 @@ export const Abas = styled.div`
     gap: 190px;
 
     div {
+        @media (max-width:768px) {
+        margin-bottom: 32px;
+        }
+        
 
         h4 {
             display: flex;
@@ -33,11 +41,20 @@ export const Abas = styled.div`
         ul {
             list-style: none;
 
+            a {
+                color: ${colors.white};
+                text-decoration: none;
+            }
+
             li {
                 font-size: 18px;
                 display: flex;
                 justify-content: center;
             }
         }
+    }
+
+    @media (max-width:768px) {
+        display: block;
     }
 `

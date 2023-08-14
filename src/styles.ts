@@ -18,14 +18,14 @@ export const GlobalCss = createGlobalStyle`
     .container {
         max-width: 1024px;
         margin: 0 auto;
-    }
-
-    body {
-        background-color: ${colors.background};
 
         @media (max-width: 768px) {
             width: 90%;
             margin: 0 auto;
         }
+    }
+
+    body {
+        background-color: ${colors.background};
     }
 `

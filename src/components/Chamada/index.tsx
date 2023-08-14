@@ -11,10 +11,12 @@ const Chamada = () => {
             <ContainerChamada>
                 <TituloChamada>Ficou interessado?</TituloChamada>
                 <img src={SetaImg} alt="seta para baixo" />
-                <CardChamada>
-                    <p>Entre em contato!</p>
-                        <img src={CallImg} alt="Telefone" />
-                </CardChamada>
+                <a href="https://ig.me/m/grupomacash">
+                    <CardChamada>
+                        <p>Entre em contato!</p>
+                            <img src={CallImg} alt="Telefone" />
+                    </CardChamada>
+                </a>
             </ContainerChamada>
         </>
     )

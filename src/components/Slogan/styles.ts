@@ -42,7 +42,12 @@ export const HomeInfo = styled.div<Props>`
         text-align: ${(props) => props.posicao === 'esquerda' ? 'start' : 'end'};
 
         @media (max-width: 768px) {
-            margin-bottom: ${(props) => props.posicao === 'esquerda' ? '36px' : '10px'};
+            margin-bottom: ${(props) => props.posicao === 'esquerda' ? '10px' : '10px'};
+            line-height: 28px;
+            }
+
+        @media (max-width: 736px) and (min-width: 414px) {
+            margin-bottom: ${(props) => props.posicao === 'esquerda' ? '50px' : '10px'};
             line-height: 28px;
             }
     }
@@ -55,6 +60,12 @@ export const HomeInfo = styled.div<Props>`
         @media (max-width: 768px) {
             width: 75px;
             height: 75px;
+
+            margin: ${(props) => props.posicao === 'esquerda' ? '0 0 50px 150px' : '32px 0 0 200px'};
+            }
+
+            @media (max-width: 736px) and (min-width: 414px) {
+                margin: ${(props) => props.posicao === 'esquerda' ? '0 0 0 200px' : '60px 0 0 200px'};
             }
     }
 

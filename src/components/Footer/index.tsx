@@ -10,8 +10,8 @@ const Footer = () => {
                     <div>
                         <h4>Contato</h4>
                         <ul>
-                            <li>Instagram</li>
-                            <li>E-mail</li>
+                        <a href="https://ig.me/m/grupomacash"><li>Instagram</li></a>
+                        <a href="mailto:macashaceleradoraesolucoes@gmail.com"><li>E-mail</li></a>
                         </ul>
                     </div>
                     <div>
@@ -26,9 +26,8 @@ const Footer = () => {
                     <div>
                         <h4>Redes Sociais</h4>
                         <ul>
-                            <li>Instagram</li>
-                            <li>E-mail</li>
-                            <li>Facebook</li>
+                            <a href="https://www.instagram.com/grupomacash/"><li>Instagram</li></a>
+                            <a href="#"><li>Facebook</li></a>
                         </ul>
                     </div>
                 </Abas>

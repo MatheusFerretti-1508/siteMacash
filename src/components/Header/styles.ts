@@ -46,7 +46,7 @@ export const Link = styled.a`
         color: ${colors.white};
     }
 
-    @media (max-width: 768px) {
-        font-size: 11px;
+    @media (max-width: 768px) and (min-width: 320px) {
+        font-size: 10px;
     }
     `
