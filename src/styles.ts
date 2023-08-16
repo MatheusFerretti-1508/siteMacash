@@ -2,6 +2,7 @@ import {createGlobalStyle} from 'styled-components'
 
 export const colors = {
     blueBrand: '#1D78A4',
+    lightBlueBrand: '#288ebf',
     white: '#fff',
     black: '#000',
     background: '#ebebeb'

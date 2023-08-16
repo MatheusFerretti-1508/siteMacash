@@ -36,7 +36,7 @@ const Header = ({ativo}:Props) => {
                         </li>
                         ) : (
                         <li>
-                            <LinkDeNavegacao to={''}>Entre em contato</LinkDeNavegacao>
+                            <LinkDeNavegacao to={'/contato'}>Entre em contato</LinkDeNavegacao>
                         </li>
                         )}
                     </ListaDeLinks>
