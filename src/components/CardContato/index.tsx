@@ -1,15 +1,24 @@
-import { ContainerServico, BorderMark } from "./styles"
+import { ContainerServico, BorderMark, FormularioContato } from "./styles"
+import emailjs from 'emailjs-com'
 
 
 
 type Props = {
     tipo: '1' | '2'
-    imagem1: string,
-    imagem2: string,
-    imagem3: string
 }
 
-const CardContato = ({ tipo, imagem1, imagem2, imagem3}: Props) => {
+const CardContato = ({ tipo }: Props) => {
+
+    const enviarEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('gmail_macash', 'template_mw6zmve', e.target, 'LeoEwPIfaBMPS3gVf')
+            .then((result) => {
+                alert('Mensagem enviada com sucesso')
+            }, (error) => {
+                alert(error.message)
+            });
+            e.target.reset();
+    };
 
     return (
         <>
@@ -17,12 +26,18 @@ const CardContato = ({ tipo, imagem1, imagem2, imagem3}: Props) => {
                 {tipo === '1' ? (
                     <ContainerServico>
                         <BorderMark tipo="1">
-                            <h3>Entre em contato conosco por meio dos canais abaixo</h3>
-                            <div>
-                            <a href="https://ig.me/m/grupomacash"><img src={imagem1} alt="Instagram" /></a>
-                            <a href="mailto:macashaceleradoraesolucoes@gmail.com"><img src={imagem2} alt="E-mail" /></a>
-                            <a href="https://www.facebook.com/profile.php?id=61550323701017&mibextid=LQQJ4d"><img src={imagem3} alt="Facebook" /></a>
-                            </div>
+                            <h3>Entre em contato conosco por meio do nosso e-mail</h3>
+                            <FormularioContato onSubmit={enviarEmail}>
+                                <label htmlFor="nome">Seu nome / Seu negócio</label>
+                                <input name="name" id="nome" type="text" />
+                                <label htmlFor="email">Seu e-mail</label>
+                                <input name="email" id="email" type="text" />
+                                <label htmlFor="assunto">Assunto</label>
+                                <input name="subject" id="assunto" type="text" />
+                                <label htmlFor="mensagem">Sua mensagem</label>
+                                <textarea name="message" id="mensagem" />
+                                <button type="submit">Enviar mensagem</button>
+                            </FormularioContato>
                         </BorderMark>
                     </ContainerServico>) : (
                     <ContainerServico>

@@ -17,7 +17,7 @@ export const ContainerServico = styled.div`
 export const BorderMark = styled.div<Props>`
     border: 2px solid ${colors.blueBrand};
     border-radius: 120px;
-    padding: 32px;
+    padding: 48px;
 
     @media (max-width: 768px) {
         display: block;
@@ -38,31 +38,6 @@ export const BorderMark = styled.div<Props>`
     }
     }
 
-    div {
-        display: flex;
-        justify-content: space-around;
-        
-        @media (max-width: 768px) {
-                display: block;
-            }
-
-        img {
-            height: 100px;
-            width: 100px;
-            transition: all ease 1s;
-            cursor: pointer;
-
-            &:hover {
-                transform: scale(1.08);
-            }
-            
-            @media (max-width: 768px) {
-                display: flex;
-                margin: 28px auto;
-            }
-        }
-    }
-
 `
 
 export const Seta = styled.img`
@@ -74,6 +49,38 @@ export const Seta = styled.img`
         }
 `
 
-// export const Social = styled.img<Props>`
+export const FormularioContato = styled.form`
+    display: grid;
 
-// `
+    label {
+        margin-bottom: 8px;
+    }
+
+    input {
+        margin-bottom: 8px;
+        padding: 8px;
+        height: 32px;
+    }
+
+    textarea {
+        margin-bottom: 16px;
+        padding: 8px;
+        resize: none;
+        height: 104px;
+    }
+
+    button {
+        padding: 8px;
+        background-color: ${colors.lightBlueBrand};
+        color: ${colors.white};
+        border: none;
+        border-radius: 16px;
+        cursor: pointer;
+        width: 50%;
+        margin: 0 auto;
+
+        &:hover {
+            background-color: ${colors.blueBrand};
+        }
+    }
+`
