@@ -13,7 +13,7 @@ const CardContato = ({ tipo }: Props) => {
 
     const enviarEmail = (e:any) => {
         e.preventDefault();
-        emailjs.sendForm('gmail_macash', 'template_mw6zmve', e.target, 'LeoEwPIfaBMPS3gVf')
+        emailjs.sendForm('service_49ahv4i', 'template_haze4wa', e.target, 'XL9fCxd3mkzCpVVBJ')
             .then((_result) => {
                 alert('Mensagem enviada com sucesso')
             }, (error) => {
