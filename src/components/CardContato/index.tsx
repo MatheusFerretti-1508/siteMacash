@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { ContainerServico, BorderMark, FormularioContato } from "./styles"
 import emailjs from 'emailjs-com'
@@ -10,10 +11,10 @@ type Props = {
 
 const CardContato = ({ tipo }: Props) => {
 
-    const enviarEmail = (e: { preventDefault: () => void; target: string | HTMLFormElement }) => {
+    const enviarEmail = (e:any) => {
         e.preventDefault();
         emailjs.sendForm('gmail_macash', 'template_mw6zmve', e.target, 'LeoEwPIfaBMPS3gVf')
-            .then((result) => {
+            .then((_result) => {
                 alert('Mensagem enviada com sucesso')
             }, (error) => {
                 alert(error.message)
